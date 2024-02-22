@@ -1,0 +1,102 @@
+@charset "utf-8"
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+ul,li{list-style: none;}
+body{
+    background-color: #fff;
+    color: #666;
+}
+/* 주조색: #0a9b97 , 보조색: #f04467 */
+
+
+
+#wrap{
+    width: 100%;
+}
+.header{
+    width: 1340px;
+    height: 100px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+.logo{}
+.logo a{
+    display: block;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.logo a img{ }
+
+.nav{}
+.main{
+    display: flex;
+    position: absolute;
+    top: 40px; left: 500px;
+}
+.main > li{
+    position: relative;
+    margin-left: 2px;
+}
+.main > li > a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    background-color: #0a9b97;
+}
+.main > li:hover > a{
+    background-color: #666;
+}
+
+.sub{
+    position: absolute;
+    left: -40px; top: 40px;
+    z-index: 50;
+    display: none;
+}
+.sub_bg{
+    position: absolute;
+    left: 0; top: 96px;
+    width: 1340px;
+    height: 200px;
+    background-color: #f04467;
+    display: none;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    background-color: #f04467;
+}
+.sub li a:hover{
+    background-color: #666;
+}
+
+
+
+.slide_img{
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+}
+.contents{
+    /* 100(link) + 150(banner) + 350(noti & gall) */
+    width: 1340px;
+    height: 600;
+    background-color: #f1f1f1;
+}
+
+.footer{
+    width: 1340px;
+    height: 120px;
+    background-color: #fff;
+}
